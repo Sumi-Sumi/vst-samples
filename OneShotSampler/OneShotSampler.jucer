@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="YPhod7" name="OneShotSampler" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              companyName="JUCE JAPAN" companyCopyright="JUCE JAPAN" pluginVST3Category="Sampler"
+              pluginAUMainType="'aumu'" pluginVSTCategory="kPlugCategSynth">
+  <MAINGROUP id="PlGOHt" name="OneShotSampler">
+    <GROUP id="{C5DDB1F0-456B-4B6C-E381-26D1707010BB}" name="Resource">
+      <FILE id="ATpM6j" name="sine_-06_05_00250.wav" compile="0" resource="1"
+            file="../../../Downloads/sine/sine_-06_05_00250.wav"/>
+    </GROUP>
+    <GROUP id="{00E4CE5B-E869-2A27-E192-60042116B1D0}" name="Source">
+      <FILE id="vHyIz4" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="x4nVu9" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="kqF17r" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="cM3UKp" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="OneShotSampler"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="OneShotSampler"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="OneShotSampler"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="OneShotSampler"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../nix/store/chb4qbwi0mixsy02cyg6ix53gnvngmrg-juce-7.0.4/share/juce/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
