@@ -58,13 +58,13 @@ class OneShotSamplerAudioProcessor : public juce::AudioProcessor
     void setStateInformation(const void *data, int sizeInBytes) override;
     // シンセサイザーのセットアップ処理
     // サンプル音源のロード、SamplerSoundオブジェクトの生成とセット、SamplerVoiceオブジェクトの生成とセット
-    void setupSampler(AudioFormatReader &newReader);
+    void setupSampler(AudioFormatReader& newReader);
 
     // サンプル音源としてバイナリリソースから正弦波を読み込んでセットアップ処理を実行
     void loadSineWave();
 
     // MidiKeyboardState オブジェクトの参照を返す
-    MidiKeyboardState &getMidiKeyboardState() { return keyboardState; };
+    MidiKeyboardState& getMidiKeyboardState() { return keyboardState; };
 
   private:
     //==============================================================================
